@@ -1,8 +1,13 @@
-{% extends 'flatpages/default.html' %}
- 
-{% block title %}
-{{ flatpage.title }}
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ flatpage.title }}</title>
+</head>
+<body>
+{{ flatpage.content }}
 <hr>
-<p>Привет из Орландо</p>>
-{% endblock title %}
+<!-- Выполнение задания 3 На одной из страниц контент повторяется 2 раза без изменения content (два раза прописано {{ flatpage.content }}).-->
+<h1><p>Дублирование контента</p></h1>>
+{{ flatpage.content }}
+</body>
+</html>
